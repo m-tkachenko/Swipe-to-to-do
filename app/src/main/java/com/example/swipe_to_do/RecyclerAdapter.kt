@@ -15,11 +15,11 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: RecyclerAdapter.ViewHolder, position: Int) {
-        holder.textViewTaskName.text = "Example"
+        holder.textViewTaskName.text = "Example task number ${position+1}"
     }
 
     override fun getItemCount(): Int {
-        return 0
+        return 10
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
